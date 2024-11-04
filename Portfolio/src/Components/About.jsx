@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function About() {
   const navigate = useNavigate();
   return (
-    <main>
+    <section id="about">
       <h1 className="title">
         Hi I'am a Software <br />
         <span className="typing">Developer</span>
@@ -20,7 +20,7 @@ function About() {
         <button onClick={() => navigate("/portfolio")}>View Portfolio</button>
         <button onClick={() => navigate("/resume")}>View Resume</button>
       </div>
-    </main>
+    </section>
   );
 }
 

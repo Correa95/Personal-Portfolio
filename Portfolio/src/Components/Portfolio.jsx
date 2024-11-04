@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function Portfolio() {
   const navigate = useNavigate();
   return (
-    <div className="portfolioContainer">
+    <section className="portfolioContainer" id="portfolio">
       <h1 className="heading">A collection of my best projects</h1>
       <p className="intro">
         With many years in web development, I acquired extensive experience
@@ -68,7 +68,7 @@ function Portfolio() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

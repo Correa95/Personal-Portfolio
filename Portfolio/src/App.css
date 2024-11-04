@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;0,800;0,900;1,100;1,200;1,600;1,700;1,800;1,900&display=swap");
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
-}
-html {
-  scroll-behavior: smooth;
 }
 
 .app {
@@ -29,4 +26,78 @@ html {
   width: calc(100% - 250px);
   overflow-y: auto;
   max-height: 100vh;
+} */
+/* //////////////////////////////////////new style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.navigation {
+  position: fixed;
+  width: 400px;
+  height: 100vh;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensure it is on top of other content */
+}
+
+.navigation.open {
+  transform: translateX(0); /* Show sidebar when open */
+}
+
+.navigation.closed {
+  transform: translateX(-100%); /* Hide sidebar when closed */
+}
+
+.mainContent {
+  width: calc(100% - 400px);
+  margin-left: 400px; /* Sidebar width */
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 100vh;
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition */
+}
+
+.mainContent.shift {
+  margin-left: 0; /* Shift content when sidebar is open */
+  width: 100%; /* Adjust width when sidebar is visible */
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    width: 250px; /* Adjust width for mobile */
+  }
+
+  .mainContent {
+    margin-left: 0; /* Remove margin for mobile view */
+    width: 100%; /* Full width */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; /* On top of sidebar */
+  }
+
+  .navigation.closed {
+    transform: translateX(-100%); /* Hide sidebar for mobile */
+  }
 }

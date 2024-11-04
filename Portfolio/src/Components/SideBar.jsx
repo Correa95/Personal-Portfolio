@@ -1,4 +1,5 @@
 import background from "../images/background1.avif";
+// import { Link } from "react-scroll";
 import { Link, useNavigate } from "react-router-dom";
 
 import "./SideBar.css";
@@ -18,22 +19,40 @@ function SideBar() {
       <nav className="navBar">
         <ul>
           <li>
-            <Link to="about" smooth={true} duration={500}>
+            <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
               About
             </Link>
           </li>
           <li>
-            <Link to="portfolio" smooth={true} duration={500}>
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="resume" smooth={true} duration={500}>
+            <Link
+              to="resume"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               Resume
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               Contact
             </Link>
           </li>

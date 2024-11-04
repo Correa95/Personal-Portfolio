@@ -2,7 +2,7 @@ import background from "../images/background.avif";
 import "./Resume.css";
 function Resume() {
   return (
-    <div className="resumeContainer">
+    <section className="resumeContainer" id="resume">
       <h1 className="header">Online Resume</h1>
       <button>Download PDF Version</button>
       <div className="resume">
@@ -21,7 +21,7 @@ function Resume() {
           </div>
         </div>
         <div className="summery">
-          <img src={background} alt="" />
+          <img src={background} alt="Profile" className="image" />
           <p>
             Results-driven software developer with a strong foundation in
             developing, testing, and deploying scalable applications. Skilled in
@@ -98,7 +98,7 @@ function Resume() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

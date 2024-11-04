@@ -1,7 +1,7 @@
 import "./Contact.css";
 function Contact() {
   return (
-    <div className="contactContainer">
+    <section className="contactContainer" id="contact">
       <h1 className="header">Contact Me</h1>
       <h4>
         Interested in hiring me to work with you. KIndly fill in the contact
@@ -23,34 +23,44 @@ function Contact() {
             <h3>mathewcorrea19@gmail.com</h3>
           </div>
         </div>
-        {/* <div className="form"> */}
-        <form action="">
-          <div className="name">
-            <label htmlFor="">
-              <input type="text" placeholder="Your Name" className="input" />
-            </label>
-            <label htmlFor="">
-              <input type="email" placeholder="Your Email" className="input" />
-            </label>
-          </div>
-          <div className="phone">
-            <label htmlFor="">
-              <input type="number" placeholder="Your Phone" className="input" />
-            </label>
-            <label htmlFor="">
-              <input
-                type="text"
-                placeholder="Your Location"
-                className="input"
-              />
-            </label>
-            <input type="text" placeholder="Your Message" />
-          </div>
-          <button>Send Message</button>
-        </form>
-        {/* </div> */}
+        <div className="form">
+          <form action="">
+            <div className="name">
+              <label htmlFor="">
+                <input type="text" placeholder="Your Name" className="input" />
+              </label>
+              <label htmlFor="">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="input"
+                />
+              </label>
+            </div>
+            <div className="phone">
+              <label htmlFor="">
+                <input
+                  type="number"
+                  placeholder="Your Phone"
+                  className="input"
+                />
+              </label>
+              <label htmlFor="">
+                <input
+                  type="text"
+                  placeholder="Your Location"
+                  className="input"
+                />
+              </label>
+              <div className="message">
+                <input type="text" placeholder="Your Message" />
+              </div>
+            </div>
+            <button>Send Message</button>
+          </form>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
