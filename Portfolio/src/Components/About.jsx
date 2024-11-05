@@ -17,8 +17,12 @@ function About() {
         that are not only functional but also intuitive to use.
       </p>
       <div className="btn">
-        <button onClick={() => navigate("/portfolio")}>View Portfolio</button>
-        <button onClick={() => navigate("/resume")}>View Resume</button>
+        <button className="aboutBtn" onClick={() => navigate("/portfolio")}>
+          View Portfolio
+        </button>
+        <button className="aboutBtn" onClick={() => navigate("/resume")}>
+          View Resume
+        </button>
       </div>
     </section>
   );

@@ -2,9 +2,9 @@ import background from "../images/background.avif";
 import "./Resume.css";
 function Resume() {
   return (
-    <section className="resumeContainer" id="resume">
+    <section className="resumeContainer">
       <h1 className="header">Online Resume</h1>
-      <button>Download PDF Version</button>
+      <button className="downloadBtn">Download PDF Version</button>
       <div className="resume">
         <div className="contactDetail">
           <div className="titles">

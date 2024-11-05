@@ -11,7 +11,9 @@ function Portfolio() {
         working on projects across multiple industries and technologies. Let me
         show you my best creations.
       </p>
-      <button onClick={() => navigate("/contact")}>Hire Me</button>
+      <button className="hire" onClick={() => navigate("/contact")}>
+        Hire Me
+      </button>
       <div className="projects">
         <div className="projectCard">
           <img src={background} alt="" />
